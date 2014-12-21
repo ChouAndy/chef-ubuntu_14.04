@@ -1,0 +1,12 @@
+{
+  "run_list": [
+    "recipe[cook_rails]",
+    "recipe[cook_rails::vagrant]"
+  ],
+  "server": {
+    "name": "10.10.10.10"
+  },
+  "automatic": {
+    "ipaddress": "10.10.10.10"
+  }
+}

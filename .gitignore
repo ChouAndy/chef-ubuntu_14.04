@@ -1,2 +1,4 @@
-/cookbooks/*
-!/cookbooks/.gitkeep
+/cookbooks/
+
+# Ignore RubyMine files
+.idea

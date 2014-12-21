@@ -1,0 +1,8 @@
+<%= node[:cook_rails][:postgresql][:environment] %>:
+  adapter: postgresql
+  encoding: <%= node[:cook_rails][:postgresql][:encoding] %>
+  database: <%= node[:cook_rails][:postgresql][:database] %>
+  pool: <%= node[:cook_rails][:postgresql][:pool] %>
+  username: <%= node[:cook_rails][:postgresql][:username] %>
+  password: <%= node[:cook_rails][:postgresql][:password] %>
+  host: <%= node[:cook_rails][:postgresql][:host] %>
