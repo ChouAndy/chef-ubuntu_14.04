@@ -20,3 +20,9 @@
 default[:ruby][:version] = "2.1.5"
 default[:nginx][:default_site_enabled] = false
 default[:postgresql][:password][:postgres] = "postgres"
+
+# server config settings for vagrant
+default[:server][:user] = 'vagrant'
+default[:server][:group] = 'vagrant'
+default[:server][:app_name] = 'vagrant'
+default[:server][:app_path] = '/vagrant'

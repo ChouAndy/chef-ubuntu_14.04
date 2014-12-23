@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: cook_rails
-# Recipe:: nginx_unicorn
+# Recipe:: vagrant
 #
 # Copyright 2014, Mercicc
 #

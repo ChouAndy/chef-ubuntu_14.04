@@ -1,16 +1,17 @@
 #
 # Cookbook Name:: cook_rails
-# Recipe:: basic
+# Recipe:: setup
 #
 # Copyright 2014, Mercicc
 #
 # All rights reserved - Do Not Redistribute
 #
 
-include_recipe "apt::default"
-include_recipe "git::default"
-include_recipe "nodejs::default"
-include_recipe "nginx::default"
+include_recipe "apt"
+include_recipe "curl"
+include_recipe "git"
+include_recipe "nodejs"
+include_recipe "nginx"
 include_recipe "postgresql::server"
 include_recipe "postgresql::ruby"
-include_recipe "sqlite::default"
+include_recipe "sqlite"

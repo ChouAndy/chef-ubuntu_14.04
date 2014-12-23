@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: cook_rails
-# Recipe:: ruby
+# Recipe:: rbenv
 #
 # Copyright 2014, Mercicc
 #
@@ -13,7 +13,7 @@ node.set[:rbenv][:install_prefix] = "/home/#{node[:rbenv][:user]}"
 node.set[:rbenv][:root_path] = "#{node[:rbenv][:install_prefix]}/.rbenv"
 node.set[:rbenv][:user_home] = "/home/#{node[:rbenv][:user]}"
 
-include_recipe "rbenv::default"
+include_recipe "rbenv"
 include_recipe "rbenv::ruby_build"
 
 # install Ruby

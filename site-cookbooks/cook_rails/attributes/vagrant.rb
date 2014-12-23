@@ -17,12 +17,6 @@
 # limitations under the License.
 #
 
-# server config settings for vagrant
-default[:server][:user] = 'vagrant'
-default[:server][:group] = 'vagrant'
-default[:server][:app_name] = 'vagrant'
-default[:server][:app_path] = '/vagrant'
-
 # unicorn config settings for vagrant
 default['unicorn-ng'][:config][:config_file_path] = "#{node[:server][:app_path]}/tmp/config"
 default['unicorn-ng'][:config][:config_file] = "#{node['unicorn-ng'][:config][:config_file_path]}/unicorn.rb"
