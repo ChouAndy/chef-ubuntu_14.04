@@ -1,6 +1,7 @@
 {
   "run_list": [
-    "recipe[cook_rails::setup]"
+    "recipe[cook_rails::setup]",
+    "recipe[cook_rails::ruby_setup]"
   ],
   "automatic": {
     "ipaddress": "54.64.89.34"
